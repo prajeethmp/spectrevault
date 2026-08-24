@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  spectrevault:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spectrevault
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - VAULT_CLEANUP_INTERVAL_SECONDS=60
+      - MAX_CIPHERTEXT_SIZE_BYTES=10485760
+      - DEFAULT_TTL_MINUTES=60
+      - MAX_TTL_MINUTES=10080

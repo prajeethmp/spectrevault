@@ -1,0 +1,49 @@
+{
+  "name": "spectrevault",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge Multi-Party Threshold Ephemeral Vault (k-of-n Secret Sharing) with Galois Field GF(2^8) arithmetic, WebCrypto AES-256-GCM, Atomic Burn-on-Read Edge API, and DOM-isolated Canvas Renderer.",
+  "private": true,
+  "author": "SpectreVault Contributors",
+  "license": "MIT",
+  "keywords": [
+    "shamir-secret-sharing",
+    "galois-field",
+    "zero-knowledge",
+    "ephemeral-vault",
+    "burn-on-read",
+    "webcrypto",
+    "privatebin",
+    "nextjs",
+    "cryptography"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.428.0",
+    "next": "^14.2.5",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.14",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
